@@ -57,11 +57,32 @@ const renderBlock = (block) => {
 
   switch (type) {
     case "paragraph":
-      if(!value.rich_text || value.rich_text.length == 0){
+      const txtArray = value.rich_text
+      if(!txtArray || txtArray.length == 0){
         return (
           <p></p>
         )
       };
+
+      if(txtArray.length > 1){
+        const mention = txtArray[0].mention
+        if(!mention) {
+          return (
+            <p>
+              <Text text={value.rich_text} />
+            </p>
+          );
+        }
+        const pageId = mention.page.id
+        const mentinTitle = txtArray[0].plain_text
+        return (
+          <p>
+            <Link href={`/blog/detail/${pageId}`}>
+              {mentinTitle}
+            </Link>
+          </p>
+        );
+      }
       return (
         <p>
           <Text text={value.rich_text} />
@@ -256,9 +277,6 @@ export default function Post({ page, blocks, tagList }) {
     }
   );
 
-  // 
-  //console.log(blocks)
-  
 
   const adIndex = Math.ceil(blocks.length/2)
   return (
