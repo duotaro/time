@@ -17,14 +17,14 @@ export const GENRE_LIST = [
         name: '時間管理',
         url : `${DOMAIN}/time`
     },
-    {
-        name: 'Book',
-        url : `${DOMAIN}/books`
-    },
-    {
-        name: 'Movies',
-        url : `${DOMAIN}/movies`
-    },
+    // {
+    //     name: 'Book',
+    //     url : `${DOMAIN}/books`
+    // },
+    // {
+    //     name: 'Movies',
+    //     url : `${DOMAIN}/movies`
+    // },
     {
         name: 'Technology',
         url : `${DOMAIN}/tech`
