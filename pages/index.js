@@ -76,7 +76,7 @@ export default function Home({ posts }) {
             {/* <Search /> */}
             {/* Categories widget*/}
             <div className="card mb-4">
-              <div className="card-header  bg-dark text-white">Design Categories</div>
+              <div className="card-header  bg-dark text-white">Categories</div>
               <div className="card-body">
                 <div className="flex-column justify-content-center small text-warning mb-2">
                   {tagList.map((tag) => {

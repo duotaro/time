@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://eurekayamauchi.github.io/time
+
+# Sitemaps
+Sitemap: https://eurekayamauchi.github.io/time/sitemap.xml

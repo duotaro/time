@@ -1,5 +1,5 @@
 export const DOMAIN = 'https://eurekayamauchi.github.io'
-export const BASE_URL = 'https://eurekayamauchi.github.io/design_posts'
+export const BASE_URL = 'https://eurekayamauchi.github.io/time'
 export const GENRE_LIST = [
     {
         name: 'Home',
@@ -33,4 +33,4 @@ export const GENRE_LIST = [
 
 export const AD_CLIENT_ID = process.env.NEXT_PUBLIC_AD_CLIENT_ID
 
-export const serviceName = 'AI'
+export const serviceName = '時間管理'
