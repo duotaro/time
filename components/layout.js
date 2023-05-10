@@ -3,7 +3,6 @@ import Navbar from './navbar'
 import Footer from './footer'
 import { GENRE_LIST, AD_CLIENT_ID } from "../const";
 import AdSense from '../components/ads/ad'
-import Script from 'next/script'
 
 export default function Layout({ children }) {
   return (
@@ -13,17 +12,6 @@ export default function Layout({ children }) {
         <meta name="description" content="TechnologyとConvenienceを組み合わせた造語。このページでは時間管理に関するツールや管理方法などについて記載します。Toggl / Timely" />
         <meta property="og:image"  contents="https://cdn-ak.f.st-hatena.com/images/fotolife/d/duo-taro100/20230501/20230501153944.jpg"></meta>
       </Head>
-      
-      <Script>{`
-          window.dataLayer = window.dataLayer || [];
-          const gtag = () => {
-            dataLayer.push(arguments);
-          }
-          gtag('js', new Date());
-  
-          gtag('config', 'G-7K32FX1NCM');
-          `}
-        </Script>
       <Navbar />
       <AdSense slot={'aaa'}/>
       <nav className="navbar navbar-expand navbar-light bg-dark gnav">
